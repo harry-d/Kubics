@@ -21,6 +21,7 @@
 
 
     <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.color.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/easing.js"></script>
     <script src="js/wow.min.js"></script>
@@ -53,7 +54,7 @@
                     <li class="hidden"><a href="#page-top"></a></li>
                     <li><a class="page-scroll" href="#about">About</a></li>
                     <li><a class="page-scroll" href="#buy">Buy</a></li>
-                    <li><a href="#"><span id="cart-txt">Cart</span><i id="cart-i" class="fa fa-shopping-cart fa-2x"></i><span id="cart-quantity">1</span></a></li>
+                    <!--<li><a href="#"><span id="cart-txt">Cart</span><i id="cart-i" class="fa fa-shopping-cart fa-2x"></i><span id="cart-quantity">1</span></a></li>-->
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -94,26 +95,143 @@
 
 
     <section id="buy" class="content-section container text-center">
+        <h2>Preorder now</h2>
         <div id="product-container" class="container">
-            <div class="col-xs-6 col-lg-3">
-                <img class="img-responsive" src="img/cube-1.png"></img>
-                <p>Cube name</p>
-                <button>S</button><button>M</button><button>L</button>
+            <div id="option-col-1" class="option-col col-sm-3">
+                <div class="option-row">
+                    <div id="option-box-1" class="option-box active">
+                        <p><i id="box-icon-1" class="fa fa-paint-brush fa-3x"></i>
+                        <br>
+                        Colour</p>
+                    </div>
+                </div>
+                <div class="option-row">
+                    <div id="option-box-2" class="option-box">
+                        <p><i id="box-icon-2" class="fa fa-square fa-2x"></i> <i id="box-icon-25" class="fa fa-square fa-3x"></i>
+                        <br>
+                        Size</p>
+                    </div>
+                </div>
+                <div class="option-row">
+                    <div id="option-box-3" class="option-box">
+                        <p><i id="box-icon-3" class="fa fa-shopping-cart fa-3x"></i>
+                        <br>
+                        Checkout</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-xs-6 col-lg-3">
-                <img class="img-responsive" src="img/cube-2.png"></img>
-                <p>Cube name</p>
-                <button>S</button><button>M</button><button>L</button>
+
+            <div id="option-col-2" class="option-col col-sm-4">
+                <div class="sel-outer">
+                    <div id="colour-sel">
+                        <div class="vertical-centre">
+                            <div class="colour-group">
+                                <label for="colour-group-1">Colour One:</label><br>
+                                <label class="control control--radio">
+                            		<input type="radio" name="colour1" value="red" checked />
+                            		<div class="control__indicator colour1"></div>
+                            	</label>
+                                <label class="control control--radio">
+                            		<input type="radio" name="colour1" value="red" />
+                            		<div class="control__indicator colour2"></div>
+                            	</label>
+                                <label class="control control--radio">
+                            		<input type="radio" name="colour1" value="red" />
+                            		<div class="control__indicator colour3"></div>
+                            	</label>
+                                <label class="control control--radio">
+                            		<input type="radio" name="colour1" value="red" />
+                            		<div class="control__indicator colour4"></div>
+                            	</label>
+                                <label class="control control--radio">
+                            		<input type="radio" name="colour1" value="red" />
+                            		<div class="control__indicator colour5"></div>
+                            	</label>
+
+                            </div>
+
+                            <div class="colour-group middle">
+                                <label for="colour-group-2">Colour Two:</label><br>
+                                <label class="control control--radio">
+                            		<input type="radio" name="colour2" value="red"/>
+                            		<div class="control__indicator colour1"></div>
+                            	</label>
+                                <label class="control control--radio">
+                            		<input type="radio" name="colour2" value="red" checked />
+                            		<div class="control__indicator colour2"></div>
+                            	</label>
+                                <label class="control control--radio">
+                            		<input type="radio" name="colour2" value="red" />
+                            		<div class="control__indicator colour3"></div>
+                            	</label>
+                                <label class="control control--radio">
+                            		<input type="radio" name="colour2" value="red" />
+                            		<div class="control__indicator colour4"></div>
+                            	</label>
+                                <label class="control control--radio">
+                            		<input type="radio" name="colour2" value="red" />
+                            		<div class="control__indicator colour5"></div>
+                            	</label>
+                            </div>
+
+                            <div class="colour-group">
+                                <label for="colour-group-3">Colour Three:</label><br>
+                                <label class="control control--radio">
+                            		<input type="radio" name="colour3" value="red"/>
+                            		<div class="control__indicator colour1"></div>
+                            	</label>
+                                <label class="control control--radio">
+                            		<input type="radio" name="colour3" value="red" />
+                            		<div class="control__indicator colour2"></div>
+                            	</label>
+                                <label class="control control--radio">
+                            		<input type="radio" name="colour3" value="red" checked />
+                            		<div class="control__indicator colour3"></div>
+                            	</label>
+                                <label class="control control--radio">
+                            		<input type="radio" name="colour3" value="red" />
+                            		<div class="control__indicator colour4"></div>
+                            	</label>
+                                <label class="control control--radio">
+                            		<input type="radio" name="colour3" value="red" />
+                            		<div class="control__indicator colour5"></div>
+                            	</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="size-sel">
+                        <div class="vertical-centre">
+                            <label for="colour-group-1">Size:</label><br>
+                            <label class="control control--radio">
+                                <input type="radio" name="size" value="red" checked />
+                                <div class="control__indicator size"><p>XS</p></div>
+                            </label>
+                            <label class="control control--radio">
+                                <input type="radio" name="size" value="red" />
+                                <div class="control__indicator size"><p>S</p></div>
+                            </label>
+                            <label class="control control--radio">
+                                <input type="radio" name="size" value="red" />
+                                <div class="control__indicator size"><p>M</p></div>
+                            </label>
+                            <label class="control control--radio">
+                                <input type="radio" name="size" value="red" />
+                                <div class="control__indicator size"><p>L</p></div>
+                            </label>
+                        </div>
+                    </div>
+                    <div id="checkout-sel">
+                        <div class="vertical-centre">
+                            <input class="submit" type="submit">Button here</input>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-xs-6 col-lg-3">
-                <img class="img-responsive" src="img/cube-3.png"></img>
-                <p>Cube name</p>
-                <button>S</button><button>M</button><button>L</button>
-            </div>
-            <div class="col-xs-6 col-lg-3">
-                <img class="img-responsive" src="img/cube-4.png"></img>
-                <p>Cube name</p>
-                <button>S</button><button>M</button><button>L</button>
+
+            <div class="option-col img-box col-sm-5">
+                <div>
+                    <img class="img-responsive vertical-centre" src="img/cube-1.png" />
+                </div>
             </div>
         </div>
     </section>

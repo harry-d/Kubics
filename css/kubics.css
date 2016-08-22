@@ -67,6 +67,19 @@ a:focus {
 .light {
     font-weight: 400;
 }
+.vertical-centre{
+    position: absolute;
+    width:100%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    /*top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate((-50%,-50%);*/
+}
 .intro {
     width: 100%;
     height: 100%;
@@ -243,24 +256,6 @@ a:focus {
 #night i {
     color:#01015A;
 }
-#buy{
-    background: white;
-    width:100%;
-}
-#buy button{
-    height:35px;
-    width:35px;
-    border:2px solid black;
-    background-color: white;
-    margin:0 10px;
-}
-#buy div{
-    padding:20px 0;
-}
-#product-container{
-    background: #E9E9E9;
-    width:inherit;
-}
 footer {
     padding: 25px 0;
     background-color: #222;
@@ -298,25 +293,198 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
 }
-@media (min-width: 767px) {
+#buy{
+    background: white;
+    width:100%;
+}
+.option-row{
+    padding:5px 0 0;
+}
+.img-box{
+    height:565px;
+    padding:5px 0;
+}
+.img-box div{
+    background: #eee;
+    height: 100%;
+}
+
+.option-box{
+    background-color: #EEE;
+    height: 100%;
+    width:100%;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    border-bottom:5px solid #EEE;
+}
+.option-box p{
+    padding: 40px 0 0;
+}
+.option-box i{
+    color: #999;
+    margin-bottom: 10px;
+}
+.option-box:hover,.option-box:focus{
+    background-color: #D8D8D8;
+    color:orangered;
+    border-bottom:5px solid orangered;
+}
+.option-box.active{
+    background-color: #D8D8D8;
+    color:orangered;
+    border-bottom:5px solid orangered;
+}
+.colour-group.middle{
+    margin:50px 0px;
+}
+label{
+    font-size: 18px;
+}
+.sel-outer{
+    width:100%;
+    height: 100%;
+    background-color:#EEE;
+}
+#option-col-1{
+    padding:0;
+}
+#option-col-2{
+    height: 565px;
+    padding: 5px 5px 4px;
+}
+#colour-sel{
+    height: 100%;
+    width: 100%;
+}
+#size-sel, #checkout-sel{
+    display: none;
+}
+@media (min-width: 768px) {
     .content-section {
-        padding: 100px 50px;
+        padding: 70px 0px;
     }
     #about-section-1{
         padding: 150px 50px;
     }
-    #buy button{
-        height:55px;
-        width:55px;
-        font-size: 20px;
-    }
     footer p, footer a {
         font-size: 20px;
+    }
+    #buy h2{
+        font-size: 40px;
     }
 }
 @media (min-width: 1200px) {
     #product-container{
         width:1100px;
         margin:auto;
+    }
+}
+.control {
+	position: relative;
+	display: block;
+	margin-bottom: 15px;
+	padding-left: 45px;
+	cursor: pointer;
+    display: inline-block;
+}
+.control input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+.control__indicator {
+	position: absolute;
+	top: 2px;
+	left: 0;
+	width: 40px;
+	height: 40px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.control__indicator.colour1 {
+    background-color: red;
+}
+.control__indicator.colour2 {
+    background-color: blue;
+}
+.control__indicator.colour3 {
+    background-color: yellow;
+}
+.control__indicator.colour4 {
+    background-color: limegreen;
+}
+.control__indicator.colour5 {
+    background-color: orange;
+}
+.control__indicator.size {
+    background-color: #d8d8d8;
+    display: table;
+}
+.control__indicator.size p{
+    display: table-cell;
+    font-size: 22px;
+    vertical-align: middle;
+}
+
+/* Hover and focus states */
+.control:hover input ~ .control__indicator.colour1,
+.control input:focus ~ .control__indicator.colour1 {
+    background-color: darkred;
+}
+.control:hover input ~ .control__indicator.colour2,
+.control input:focus ~ .control__indicator.colour2 {
+    background-color: darkblue;
+}
+.control:hover input ~ .control__indicator.colour3,
+.control input:focus ~ .control__indicator.colour3 {
+    background-color: goldenrod;
+}
+.control:hover input ~ .control__indicator.colour4,
+.control input:focus ~ .control__indicator.colour4 {
+    background-color: darkgreen;
+}
+.control:hover input ~ .control__indicator.colour5,
+.control input:focus ~ .control__indicator.colour5 {
+    background-color: darkorange;
+}
+.control:hover input ~ .control__indicator.size,
+.control input:focus ~ .control__indicator.size {
+    background-color: #bbb;
+}
+/* Checked state */
+.control input:checked ~ .control__indicator {
+    outline:4px solid #ccc;
+}
+.control input:checked ~ .control__indicator.size {
+    outline:4px solid #bbb;
+}
+/* Disabled state */
+.control input:disabled ~ .control__indicator {
+	pointer-events: none;
+	opacity: .6;
+	background: #e6e6e6;
+}
+/* Disabled circle colour */
+.control--radio input:disabled ~ .control__indicator:after {
+	background: #7b7b7b;
+}
+@media (min-width: 768px) {
+    .control {
+    	padding-left: 40px;
+    }
+    .control__indicator {
+        width: 35px;
+        height: 35px;
+    }
+}
+@media (min-width: 992px) {
+    .control {
+    	padding-left: 45px;
+    }
+    .control__indicator {
+    	width: 40px;
+    	height: 40px;
     }
 }

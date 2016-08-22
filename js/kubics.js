@@ -5,6 +5,40 @@ $( document ).ready(function() {
     $("body").css("overflow-x", "hidden");
     new WOW().init();
 
+
+    $("#option-box-1").click(function(){
+        $("#option-box-2").removeClass("active");
+        $("#option-box-3").removeClass("active");
+
+        $("#option-box-1").addClass("active");
+
+        $("#size-sel").fadeOut(300);
+        $("#checkout-sel").fadeOut(300);
+
+        $("#colour-sel").fadeIn(300);
+    });
+
+    $("#option-box-2").click(function(){
+        $("#option-box-1").removeClass("active");
+        $("#option-box-3").removeClass("active");
+
+        $("#colour-sel").fadeOut(300);
+        $("#checkout-sel").fadeOut(300);
+
+        $("#size-sel").fadeIn(300);
+    });
+
+    $("#option-box-3").click(function(){
+        $("#option-box-1").removeClass("active");
+        $("#option-box-3").removeClass("active");
+
+        $("#colour-sel").fadeOut(300);
+        $("#size-sel").fadeOut(300);
+
+        $("#checkout-sel").fadeIn(300);
+    });
+
+
     $("#continue-i").hide();
     $("#continue-txt").hide();
     $( "#continue-btn" ).hover(
@@ -15,6 +49,7 @@ $( document ).ready(function() {
             $("#continue-txt").fadeOut(700);
         }
     );
+
 
     var headerVid = document.getElementById("header-video");
     headerVid.ontimeupdate = function() {
