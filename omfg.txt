@@ -1,0 +1,130 @@
+<div class="structure-bg">
+    <h1>Ordre des orateurs</h1>
+</div>
+<div class="content-section text-center">
+
+    <div class="col-sm-6">
+        <div class="prop">
+            <h2>1st Proposition Speaker</h2>
+            <p>6 minute constructive speech</p>
+            <ul>
+                <li>Introduce the resolution</li>
+                <li>Outline all proposition points</li>
+                <li>Introduce (at least) two points and fully develop them</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="col-sm-6">
+        <div class="op">
+            <h2>1st Opposition Speaker</h2>
+            <p>
+                6 minute constructive speech
+            </p>
+
+            <ul>
+                <li>Outline all opposition points</li>
+                <li>Introduce (at least) two points and fully develop them</li>
+                <li>Respond to (refute) 1st Proposition's arguments</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div class="col-sm-6">
+        <div class="prop">
+            <h2>2nd Proposition Speaker</h2>
+            <p>
+                6 minute constructive speech
+            </p>
+
+            <ul>
+                <li>Introduce (at least) one point and fully develop it</li>
+                <li>Respond to (refute) 1st Opposition's arguments</li>
+                <li>Rebuild 1st prop's arguments</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="col-sm-6">
+        <div class="op">
+            <h2>2nd Opposition Speaker</h2>
+            <p>
+                6 minute constructive speech
+            </p>
+
+            <ul>
+                <li>Introduce (at least) one point and fully develop it</li>
+                <li>Respond to (refute) 2nd Prop's arguments</li>
+                <li>Rebuild 1st Opp's arguments</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+
+    <div class="col-sm-6">
+        <div class="prop">
+            <h2>1st Proposition Speaker</h2>
+            <p>
+                (3 minute rebuttal/summary speech)
+            </p>
+
+            <ul>
+                <li>Remaining specific rebuttal and rebuilding</li>
+                <li>"Big picture" summary of round dealing with major issues to explain why your team has won</li>
+                <li>No new constructive ideas</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="col-sm-6">
+        <div class="op">
+            <h2>1st Opposition Speaker</h2>
+            <p>
+                (3 minute rebuttal/summary speech)
+            </p>
+
+            <ul>
+                <li>Remaining specific rebuttal and rebuilding</li>
+                <li>"Big picture" summary of round dealing with major issues to explain why your team has won</li>
+                <li>No new constructive ideas</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div class="col-sm-6">
+        <div class="prop">
+            <h2>2nd Proposition Speaker</h2>
+            <p>
+                (3 minute rebuttal/summary speech)
+            </p>
+
+            <ul>
+                <li>Responsibilities as above, to be divided as partners deem fit</li>
+                <li>No new constructive ideas</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="col-sm-6">
+        <div class="op">
+            <h2>2nd Opposition Speaker</h2>
+            <p>
+                (3 minute rebuttal/summary speech)
+            </p>
+
+            <ul>
+                <li>Responsibilities as above, to be divided as partners deem fit</li>
+                <li>No new constructive ideas</li>
+            </ul>
+        </div>
+    </div>

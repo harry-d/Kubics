@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Harry Dong">
+    <link rel="shortcut icon" href="/logo.png" type="image/x-icon">
+
+    <title>Événements - Confederation Cup</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="../css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/animate.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400i|Roboto:400,400i" rel="stylesheet">
+
+    <link href="../css/con-cup.css" rel="stylesheet">
+    <link href="../css/con-cup-nav.css" rel="stylesheet">
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/easing.js"></script>
+    <script src="../js/wow.min.js"></script>
+
+    <script src="../js/con-cup-nav.js"></script>
+
+</head>
+
+<body class="push events" data-spy="scroll" data-target=".navbar-fixed-top">
+<div style="min-height:calc(100% - 120px);">
+    <nav id="navbar" class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button id="btn-nav-toggle" onclick="toggleNav()" type="button" class="navbar-toggle">
+                    <span class="icon-bar top-bar"></span>
+                    <span class="icon-bar middle-bar"></span>
+                    <span class="icon-bar bottom-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html">
+                    <i class="fa fa-home"></i><span id="brand-txt"><span class="light">La Coupe de la Confédération</span></span>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li><a href="/#about">À Propos</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Inscription<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="invitation.html">Invitation</a></li>
+                            <li><a href="instructions.html">Instructions</a></li>
+                            <li><a href="formulaire-inscription.php">Formulaire d'Inscription</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">La Compétition<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="debate-structure.html">Structure du Débat</a></li>
+                            <li><a href="rules.html">Règlements</a></li>
+                            <li><a href="events.html">Événements</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.php">Contact</a></li>
+                    <li class="divider">&nbsp;|&nbsp;</li>
+                    <li><a href="../events.html">EN</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+	<div class="events-bg">
+        <h1>Événements</h1>
+    </div>
+
+    <div class="content-section text-center">
+
+        <h2>Débats</h2>
+
+        <br><br>
+        <div class="col-sm-6">
+            <img class="img-responsive" src="../img/stj.png" />
+            <p>10 - 11e Décembre 2016 (Winnipeg)</p>
+        </div>
+
+        <div class="col-sm-6">
+            <img class="img-responsive" src="../img/sac.png" />
+            <p>10 - 11e Février 2017 (Halifax)</p>
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="col-sm-6">
+            <img class="img-responsive col-sm-8 col-sm-offset-2" src="../img/george.png" />
+            <div class="clearfix"></div>
+            <p style="margin-top:8px">24 - 25e Février, 2017 (Vancouver)</p>
+        </div>
+
+        <div class="col-sm-6">
+            <img class="img-responsive" src="../img/uts.jpeg" />
+            <p style="margin-top:5px">31e Mars - 1er Avril, 2017 (Toronto)</p>
+        </div>
+        <div class="clearfix"></div>
+
+        <br>
+
+
+
+        <h2>Finals</h2>
+
+        <br><br>
+            <img class="img-responsive col-sm-8 col-sm-offset-2" src="../img/ash.jpg" />
+            <div class="clearfix"></div>
+            <p>April 28 - 30th, 2017 (Ottawa)</p>
+        </div>
+    </div>
+
+</div>
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p class="pull-left">&copy; La Coupe de la Confédération 2017</p><a id="emailindex" href="contact.php" class="pull-right">coupedelaconfederation2017@gmail.com</a>
+    </div>
+</footer>
+
+
+</body>
+
+</html>
