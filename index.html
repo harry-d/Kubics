@@ -8,30 +8,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Harry Dong">
+    <link rel="shortcut icon" href="/logo.png" type="image/x-icon">
 
-    <title>Kubics - by Kinetic Kreations</title>
+    <title>Confederation Cup</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="css/animate.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400i|Roboto:400,400i" rel="stylesheet">
 
-    <link href="css/kubics.css" rel="stylesheet">
-    <link href="css/kubics-nav.css" rel="stylesheet">
-
+    <link href="css/con-cup.css" rel="stylesheet">
+    <link href="css/con-cup-nav.css" rel="stylesheet">
 
     <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.color.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/easing.js"></script>
     <script src="js/wow.min.js"></script>
 
-    <script src="js/kubics.js"></script>
-    <script src="js/kubics-nav.js"></script>
+    <script src="js/con-cup.js"></script>
+    <script src="js/con-cup-nav.js"></script>
+
 
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body id="page-top" class="index" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Navigation -->
     <nav id="navbar" class="navbar navbar-custom navbar-fixed-top" role="navigation">
@@ -43,7 +43,7 @@
                     <span class="icon-bar bottom-bar"></span>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="fa fa-cube"></i><span id="brand-txt"><span class="light">Kinetic</span> Kreations</span>
+                    <i class="fa fa-home"></i><span id="brand-txt"><span class="light">Confederation Cup</span></span>
                 </a>
             </div>
 
@@ -53,8 +53,18 @@
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden"><a href="#page-top"></a></li>
                     <li><a class="page-scroll" href="#about">About</a></li>
-                    <li><a class="page-scroll" href="#buy">Buy</a></li>
-                    <!--<li><a href="#"><span id="cart-txt">Cart</span><i id="cart-i" class="fa fa-shopping-cart fa-2x"></i><span id="cart-quantity">1</span></a></li>-->
+                    <li><a class="page-scroll" href="register.html">Register</a></li>
+                    <li><a class="page-scroll" href="#team">Team</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">The Competition<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="debate-structure.html">Debate Structure</a></li>
+                            <li><a href="rules.html">Rules</a></li>
+                            <li><a href="events.html">Events</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.php">Contact</a></li>
+                    <li class="divider">&nbsp;|&nbsp;</li><li><a href="fr/index.html">FR</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -64,14 +74,13 @@
 
     <!-- Intro Header -->
     <header class="intro">
-        <video id="header-video" autoplay>
-            <source src="img/video.mp4" type="video/mp4">
+        <!--<video id="header-video" autoplay>
+            <source src="img/Video.mp4" type="video/mp4">
             Your browser does not support the video tag.
-        </video>
-        <div class="col-sm-12">
-            <h1 id="intro-head">KUBICS</h1>
-            <p id="intro-p">By Kinetic Kreations</p>
-        </div>
+        </video>-->
+        <img id="header-bg" src="img/header-bg.jpg" />
+        <object id="map" class="img-responsive" type="image/svg+xml" data="img/canada.svg" alt="Map of Canada"></object>
+        <img id="intro-logo" class="img-responsive" src="img/logo.png" alt="Confederation Cup Logo"/>
         <a id="continue-btn" href="#about" class="btn btn-circle page-scroll">
             <i id="continue-i" class="fa fa-angle-down"></i>
             <p id="continue-txt">Continue</p>
@@ -79,168 +88,73 @@
     </header>
 
     <!-- About Section -->
-    <section id="about" class="text-center">
-        <div id="about-section-1">
-            <p class="about-header wow animated fadeInUp">Give your desk some <span class="red">co</span><span class="blue">lo</span><span class="yellow">ur</span></p>
-        </div>
+    <section id="about" class="content-section text-center">
 
-        <!--<div id="#about-section-2" style="background:black;height:100vw">
-            <div id="triangle-top-left"></div>
+        <h2 class="wow animated fadeIn">About</h2>
 
-            <p id="day" class="about-header-2">Light as day<br><i class="fa fa-cube fa-4x"></i></p>
-            <p id="night" class="about-header-2"><i class="fa fa-cube fa-4x"></i><br>Dark as night</p>
+        <p class="wow animated fadeIn">The Confederation Cup brings Canada's most talented high school debaters together to debate the issues that have shaped our country from before Confederation to the present day. Multiculturalism, the status of Quebec, justice for First Nations, medicare, conscription, oil sands development, and free trade with the US are just some of the great Canadian questions which will be argued out by Canada's next generation of leaders. <br><br>Organized and run by students, the Confederation Cup will also draw on an advisory group of distinguished educators, scholars, and community leaders for thematic advice and support. The Confederation Cup is an exciting convergence of youth leadership, public philanthropy, ‎and thoughtful reflection on core Canadian issues and values. </p>
 
-        </div>-->
+        <a class="btn btn-default lg" href="register.html">Register Here &nbsp;<i class="fa fa-pencil-square-o"></i></a>
     </section>
 
 
-    <section id="buy" class="content-section container text-center">
-        <h2>Preorder now</h2>
-        <div id="product-container" class="container">
-            <div id="option-col-1" class="option-col col-sm-3">
-                <div class="option-row">
-                    <div id="option-box-1" class="option-box active">
-                        <p><i id="box-icon-1" class="fa fa-paint-brush fa-3x"></i>
-                        <br>
-                        Colour</p>
-                    </div>
-                </div>
-                <div class="option-row">
-                    <div id="option-box-2" class="option-box">
-                        <p><i id="box-icon-2" class="fa fa-square fa-2x"></i> <i id="box-icon-25" class="fa fa-square fa-3x"></i>
-                        <br>
-                        Size</p>
-                    </div>
-                </div>
-                <div class="option-row">
-                    <div id="option-box-3" class="option-box">
-                        <p><i id="box-icon-3" class="fa fa-shopping-cart fa-3x"></i>
-                        <br>
-                        Checkout</p>
-                    </div>
-                </div>
-            </div>
+    <section id="team" class="content-section text-center">
 
-            <div id="option-col-2" class="option-col col-sm-4">
-                <div class="sel-outer">
-                    <div id="colour-sel">
-                        <div class="vertical-centre">
-                            <div class="colour-group">
-                                <label for="colour-group-1">Colour One:</label><br>
-                                <label class="control control--radio">
-                            		<input type="radio" name="colour1" value="red" checked />
-                            		<div class="control__indicator colour1"></div>
-                            	</label>
-                                <label class="control control--radio">
-                            		<input type="radio" name="colour1" value="red" />
-                            		<div class="control__indicator colour2"></div>
-                            	</label>
-                                <label class="control control--radio">
-                            		<input type="radio" name="colour1" value="red" />
-                            		<div class="control__indicator colour3"></div>
-                            	</label>
-                                <label class="control control--radio">
-                            		<input type="radio" name="colour1" value="red" />
-                            		<div class="control__indicator colour4"></div>
-                            	</label>
-                                <label class="control control--radio">
-                            		<input type="radio" name="colour1" value="red" />
-                            		<div class="control__indicator colour5"></div>
-                            	</label>
+        <h2>Leadership Team</h2>
 
-                            </div>
+        <div class="col-sm-5 col-sm-offset-1">
 
-                            <div class="colour-group middle">
-                                <label for="colour-group-2">Colour Two:</label><br>
-                                <label class="control control--radio">
-                            		<input type="radio" name="colour2" value="red"/>
-                            		<div class="control__indicator colour1"></div>
-                            	</label>
-                                <label class="control control--radio">
-                            		<input type="radio" name="colour2" value="red" checked />
-                            		<div class="control__indicator colour2"></div>
-                            	</label>
-                                <label class="control control--radio">
-                            		<input type="radio" name="colour2" value="red" />
-                            		<div class="control__indicator colour3"></div>
-                            	</label>
-                                <label class="control control--radio">
-                            		<input type="radio" name="colour2" value="red" />
-                            		<div class="control__indicator colour4"></div>
-                            	</label>
-                                <label class="control control--radio">
-                            		<input type="radio" name="colour2" value="red" />
-                            		<div class="control__indicator colour5"></div>
-                            	</label>
-                            </div>
 
-                            <div class="colour-group">
-                                <label for="colour-group-3">Colour Three:</label><br>
-                                <label class="control control--radio">
-                            		<input type="radio" name="colour3" value="red"/>
-                            		<div class="control__indicator colour1"></div>
-                            	</label>
-                                <label class="control control--radio">
-                            		<input type="radio" name="colour3" value="red" />
-                            		<div class="control__indicator colour2"></div>
-                            	</label>
-                                <label class="control control--radio">
-                            		<input type="radio" name="colour3" value="red" checked />
-                            		<div class="control__indicator colour3"></div>
-                            	</label>
-                                <label class="control control--radio">
-                            		<input type="radio" name="colour3" value="red" />
-                            		<div class="control__indicator colour4"></div>
-                            	</label>
-                                <label class="control control--radio">
-                            		<input type="radio" name="colour3" value="red" />
-                            		<div class="control__indicator colour5"></div>
-                            	</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="size-sel">
-                        <div class="vertical-centre">
-                            <label for="colour-group-1">Size:</label><br>
-                            <label class="control control--radio">
-                                <input type="radio" name="size" value="red" checked />
-                                <div class="control__indicator size"><p>XS</p></div>
-                            </label>
-                            <label class="control control--radio">
-                                <input type="radio" name="size" value="red" />
-                                <div class="control__indicator size"><p>S</p></div>
-                            </label>
-                            <label class="control control--radio">
-                                <input type="radio" name="size" value="red" />
-                                <div class="control__indicator size"><p>M</p></div>
-                            </label>
-                            <label class="control control--radio">
-                                <input type="radio" name="size" value="red" />
-                                <div class="control__indicator size"><p>L</p></div>
-                            </label>
-                        </div>
-                    </div>
-                    <div id="checkout-sel">
-                        <div class="vertical-centre">
-                            <input class="submit" type="submit">Button here</input>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <img class="img-circle bio" src="img/martine.jpg" />
 
-            <div class="option-col img-box col-sm-5">
-                <div>
-                    <img class="img-responsive vertical-centre" src="img/cube-1.png" />
-                </div>
-            </div>
+            <img class="img-responsive bio" src="img/podium.png"/>
+            <h4 class="bio">Martine Duffy</h4>
+            <p id="martine-p" >Martine Duffy is a Grade 12 student at the University of Toronto Schools. She has debated in BC, Asia, and England over the past 5 years, and is passionate about asking the hard questions when it comes to our great nation.
         </div>
+        <div class="col-sm-5">
+
+
+            <img class="img-circle bio" src="img/jay.jpg" />
+            <img class="img-responsive bio" src="img/podium.png"/>
+            <h4 class="bio" >Jay McCauley</h4>
+            <p id="jay-p">Jay McCauley is a Grade 12 student at St. George’s School in Vancouver who is actively involved in the Canadian political landscape. Jay is excited to witness Canada’s finest debaters compete and have fun at the Confederation Cup this year.</p>
+        </div>
+        <div class="clearfix"></div>
+
     </section>
+
+    <section id="sponsors" class="content-section text-center">
+
+        <h2 style="color:#000">Special Thanks To</h2>
+
+        <img class="img-responsive col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4" src="img/aurea.jpg"/>
+
+        <div class="clearfix"></div>
+        <br><br>
+        <!--<img class="img-responsive col-sm-3 col-sm-offset-2 col-xs-4" src="img/canada-150.jpg" />
+        <img class="img-responsive col-sm-5 col-xs-8" src="img/munk.jpg" />-->
+
+        <img class="img-responsive col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4" src="img/ash.jpg" />
+        <div class="clearfix"></div>
+        <div class="col-md-10 col-md-offset-1">
+            <img class="img-responsive col-xs-7 col-sm-5 col-sm-offset-1" style="padding:2vw" src="img/uts.jpeg" />
+            <img class="img-responsive col-xs-5 col-sm-4 col-sm-offset-1" style="padding:1vw" src="img/george.png" />
+            <br><br><br>
+            <img class="img-responsive col-xs-6 col-sm-5 col-sm-offset-1" style="padding:2vw" src="img/sac.png" />
+            <img class="img-responsive col-xs-6 col-sm-6" style="padding:2vw 6vw" src="img/stj.png" />
+
+        </div>
+        <div class="clearfix"></div>
+
+    </section>
+
+
 
 
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p class="pull-left">Copyright &copy; Kinetic Kreations <?php echo date("Y");?></p><a href="mailto:someone@example.com?Subject=Hello%20again" class="pull-right">support@kinetickreations.com</a>
+            <p class="pull-left">Copyright &copy; Confederation Cup 2016</p><a id="emailindex" href="contact.php" class="pull-right">confederationcup2017@gmail.com</a>
         </div>
     </footer>
 
